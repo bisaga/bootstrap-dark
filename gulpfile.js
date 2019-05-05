@@ -41,9 +41,20 @@ gulp.task('copy-dist-to-wwwroot', function () {
         .pipe(gulp.dest('app/wwwroot/'));
 });
 
+gulp.task('copy-dist-to-staticapp', function () {
+    return gulp
+        .src(['dist/**/*'])
+        .pipe(gulp.dest('staticapp/'));
+});
+
 gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
     gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-wwwroot'));
 }));
 
-gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')), function () {
+gulp.task('default', 
+    gulp.parallel('copy-bootstrap-js', 
+        gulp.series('build-theme', 
+                    'copy-dist-to-wwwroot', 
+                    'copy-dist-to-staticapp' 
+                    )), function () {
 });
