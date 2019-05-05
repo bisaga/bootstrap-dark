@@ -1,0 +1,75 @@
+// stylelint-disable
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$color-darker-percent-full: 20%;
+$color-darker-percent-half: $color-darker-percent-full / 2;
+$color-darker-percent-quarter: $color-darker-percent-half / 2;
+$color-darker-percent-none: 0;
+
+$blue:    lighten(#007bff, $color-darker-percent-half);
+$indigo:  darken(#6610f2, $color-darker-percent-none);
+$purple:  darken(#6f42c1, $color-darker-percent-none);
+$pink:    darken(#e83e8c, $color-darker-percent-none);
+$red:     darken(#dc3545, $color-darker-percent-none);
+$orange:  darken(#fd7e14, $color-darker-percent-none);
+$yellow:  lighten(#ffc107, $color-darker-percent-half);
+$green:   darken(#28a745, $color-darker-percent-none);
+$teal:    darken(#20c997, $color-darker-percent-none);
+$cyan:    lighten(#17a2b8, $color-darker-percent-none);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $orange;
+$danger:        $red;
+$light:         $gray-300;
+$dark:          $gray-800;
+
+$body-bg:#191d21;
+$body-color: $gray-200;
+
+// -- custom bisaga settings ----
+$font-size-base: 0.9rem;
+$line-height-base: 1;
+$input-btn-padding-y: .3rem;
+$spacer: 0.4rem;
+$table-cell-padding: .5rem;
+$breadcrumb-padding-y: .5rem; 
+$breadcrumb-padding-x: .5rem; 
+$navbar-toggler-padding-y: .1rem;
+$navbar-toggler-padding-x: .1rem;
+$label-margin-bottom: .15rem;
+$dropdown-link-hover-bg: $light;       
+
+$breadcrumb-bg: $gray-800;
+$breadcrumb-divider-color: $gray-100;
+$breadcrumb-active-color: $gray-300; 
+
+$form-group-margin-bottom: 0.6rem;
+
+.navbar-toggler-icon {
+    width: .9em;
+    height: .9em;
+}
+
+// for HTML5 <label> element
+label {
+    font-size: small;
+    color: silver;
+}
+// for <div class="label"> element 
+.label {
+    font-size: small;
+    color: silver;
+}
